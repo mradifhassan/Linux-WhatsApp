@@ -1,7 +1,7 @@
 <p align="center">
   <img src="whatsapp.svg" alt="WhatsApp">
+# How to install native WhatsApp software alternative desktop client in Ubuntu Linux
 </p>
-## How to install native WhatsApp software alternative desktop client in Ubuntu Linux
 
 Unlike Windows and macOS, WhatsApp does not provide a native desktop client for Linux systems. So we use WhatsApp in our browser. But there is an alternative using WhatsApp from your device without using browser. To do that so, we need to get introduced with an open source desktop client named `zapzap` which is built specifically for Linux users.
 ## Features
