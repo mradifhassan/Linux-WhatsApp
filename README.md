@@ -42,13 +42,13 @@ sudo flatpak remote-add --if-not-exists flathub [https://dl.flathub.org/repo/fla
 flatpak update
 ```
 
-## Step 2. Installing ZapZap
+## 2. Installing ZapZap
 With the Flathub repository successfully fixed, go to the official site of zapzap (https://rtosta.com/zapzap/) and then install flathub and install the ZapZap application package and its dependencies (such as the KDE Platform runtime):
 ```bash
 sudo flatpak install flathub com.rtosta.zapzap
 ```
 Type `y` when prompted to confirm the installation of required runtimes and permissions.
-## Step 3. Customizing the Application Icon
+## 3. Customizing the Application Icon
 Flatpak applications maintain their configurations in global directories that get overwritten during software updates. To ensure customizations persist, create a local, user-specific desktop override.
 
 ### Step 3.1: Copy the Desktop Entry
