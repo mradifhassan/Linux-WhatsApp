@@ -79,10 +79,23 @@ nano com.rtosta.zapzap.desktop
 Modify the entry according to the FreeDesktop Icon Theme Specification. Since we are targeting an asset inside a non-standard icon directory, an absolute path must be supplied instead of just a raw filename with an extension:
 ```bash
 [Desktop Entry]
-...
+Version=1.0
 Name=WhatsApp
-Icon=/home/username/.local/share/applications/whatsapp.svg
-...
+Comment[pt_BR]=WhatsApp Desktop para Linux
+Comment=WhatsApp Desktop for Linux
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=zapzap --file-forwarding com.rtosta.zapzap @@u %u @@
+Icon=whatsapp.svg
+Type=Application
+Categories=Chat;Network;InstantMessaging;Qt;
+Keywords=WhatsApp;Chat;ZapZap;
+StartupWMClass=zapzap
+MimeType=x-scheme-handler/whatsapp
+Terminal=false
+SingleMainWindow=true
+X-GNOME-UsesNotifications=true
+X-GNOME-SingleWindow=true
+X-Flatpak=com.rtosta.zapzap
+
 ```
 Save and exit the text editor (in `nano`, press `Ctrl+O`,`Enter`, then `Ctrl+X`. For `vim`, `esc` and then `:wq`. For `gnome-text-editor`, `Ctrl+S` and then `Ctrl+Q`).
 
